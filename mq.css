@@ -1,0 +1,86 @@
+@media (max-width: 650px){
+    h1{
+        font-size: 2.25rem;
+    }
+
+    #history img{
+        width: 300px;
+    }
+
+    .grid-pictures{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .grid-pictures img{
+        width: 225px;
+    }
+}
+
+@media (max-width: 680px){
+    #plan-recommended{
+        order: 0;
+    }
+
+    #plan-premium{
+        order: 1;
+    }
+}
+
+@media (max-width: 800px){
+    .menu-label{
+        display: flex;
+        width: max-content;
+        transition: 200ms ease;
+        cursor: pointer;
+    }
+
+    .menu-label:hover{
+        scale: 1.1;
+    }
+
+    .header__links-container{
+        flex-flow: column nowrap;
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        background-color: #0F1016;
+        padding: 30px;
+        height: 100%;
+        width: 75%;
+        z-index: 10;
+        transition: 500ms ease;
+    }
+
+    #menu-checkbox:checked ~ ul{
+        right: 0%;
+    }
+
+    #menu-checkbox:checked ~ #overlay{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+    }
+
+    /*---HISTORY---*/
+}
+
+@media (max-width: 1000px){
+    #history{
+        flex-flow: column nowrap;
+    }
+
+    #how-we-can-help{
+        flex-flow: column nowrap;
+    }
+
+    #plan-recommended{
+        order: 1;
+    }
+}

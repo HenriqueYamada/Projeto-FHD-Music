@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #0F1016;
+    --secondary-color: #1A1C24;
+    --accent-color: #FF220C;
+    --accent-color-darker: #9c160a;
+
+    --primary-text: #000000;
+    --secondary-text: #1A1A1A;
+    --terciary-text: #222222;
+
+    --background: #f1f1f1;
+
+    --title: 'Lato', Helvetica, Arial, Sans-serif;
+    --primary-font: 'Roboto', Helvetica, Arial, Sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: var(--primary-font);
+    font-size: 12pt;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+h1{ 
+    font-family: var(--title);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2{
+    font-family: var(--title);
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-family: var(--title);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*---HEADER---*/
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0F1016;
+    padding: 25px 30px;
+}
+
+header #fhd-logo{
+    height: 40px;
+    transition: 300ms ease;
+}
+
+header #fhd-logo:hover{
+    scale: 1.1;
+}
+
+#menu-checkbox, .menu-label, #overlay{
+    display: none;
+    width: 0px;
+}
+
+.header__links-container{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.header__links-container a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.header__links-container a::after{
+    content: ' ';
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    background-color: var(--accent-color);
+    height: 2px;
+    width: 0;
+    transition: 300ms ease;
+}
+
+.header__links-container a:hover::after{
+    right: 0;
+    width: 100%;
+}
+
+/*---HISTORY---*/
+
+#history{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+    padding: 50px 50px;
+    width: 1350px;
+    max-width: 100%;
+}
+
+#history img{
+    display: inline-block;
+    width: 375px;
+    border-radius: 10px;
+}
+
+/*---HOW-WE-CAN-HELP---*/
+
+#how-we-can-help{
+    background-color: var(--background);
+    text-align: center;
+    padding: 100px 50px;
+    width: 100%;
+}
+
+.flex-classes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.flex-classes .classes-cards{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 13px #00000028;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    transition: 300ms ease;
+}
+
+.flex-classes .classes-cards:hover{
+    transform: translate(0, -10%);
+}
+
+/*---grid-images---*/
+
+#pictures{
+    padding: 100px 50px;
+}
+
+.grid-pictures{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "box-1 box-1 box-2 box-3"
+        "box-1 box-1 box-4 box-5"
+    ;
+    gap: 1.1em;
+    margin: 30px auto;
+    width: 900px;
+    max-width: 100%;
+}
+
+.grid-pictures img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    transition: 300ms ease;
+}
+
+.grid-pictures img:hover{
+    scale: 1.05;
+}
+
+/*---courses---*/
+
+#courses{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--background);
+    padding: 100px 50px;
+}
+
+#courses .courses-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 5px;
+}
+
+.courses-container .courses-cards{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.192);
+    border-radius: 15px;
+    width: 250px;
+    transition: 150ms ease;
+    overflow: hidden;
+}
+
+.courses-container .courses-cards:hover{
+    scale: 1.1;
+}
+
+.courses-cards_container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
+
+.courses-container img{
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.courses-cards_container h2{
+    margin-bottom: auto;
+}
+
+.btn-courses-cards{
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: max-content;
+    transition: 150ms ease;
+}
+
+.btn-courses-cards:hover{
+    background-color: var(--accent-color-darker);
+}
+
+#access-courses{
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.25em;
+    margin: 50px auto;
+    padding: 20px 40px;
+    width: max-content;
+    max-width: 100%;
+    transition: 150ms ease-in-out;
+}
+
+#access-courses:hover{
+    background-color: var(--accent-color-darker);
+    scale: 1.1;
+}
+
+/*---plans---*/
+
+#plans{
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.plans-container{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.plans-content{
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+    padding: 40px 20px 25px 20px;
+    height: 300px;
+    width: 275px;
+    transition: 150ms ease;
+}
+
+.plans-content:hover{
+    scale: 1.1;
+}
+
+    #plan-recommended{
+        border: 1.5px solid var(--accent-color);
+        box-shadow: 0px 0px 16px 3px #ff200c44;
+        padding: 45px 20px 30px 20px;
+        height: 350px;
+    }
+
+    #plan-recommended span{
+        margin-top: 25px;
+    }
+
+    .plans-content h3{
+        font-size: 1.5em;
+    }
+
+.plans-content span{
+    color: var(--accent-color);
+    font-size: 1.75em;
+    margin-top: 20px;
+}
+
+.plans-content ul{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+    list-style: none;
+}
+
+.plans-content a{
+    display: flex;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: max-content;
+    transition: 150ms ease;
+}
+
+.plans-content a:hover{
+    background-color: var(--accent-color-darker);
+}
+
+/*---contact---*/
+
+#contact{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 0 15px 0;
+}
+
+#contact h2{
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+#contact ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    margin-bottom: 32.5px;
+}
+
+#contact ul a{
+    color: white;
+    text-decoration: none;
+}
+
+#contact ul a:hover{
+    text-decoration: underline;
+}
+
+/*---footer---*/
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

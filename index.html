@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FHD Music</title>
+    <link rel="shortcut icon" href="images/FHD-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mq.css">
+</head>
+<body>
+    <header>
+        <img id="fhd-logo" src="images/FHD-logo.png" alt="Logo">
+
+        <input type="checkbox" id="menu-checkbox">
+        <label class="menu-label" for="menu-checkbox">
+            <img src="images/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        </label>
+
+        <label id="overlay" for="menu-checkbox"></label>
+        
+        <ul class="header__links-container">
+            <label class="menu-label" for="menu-checkbox">
+                <img src="images/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            </label>
+
+            <li><a href="#history">História</a></li>
+            <li><a href="#how-we-can-help">Ajuda</a></li>
+            <li><a href="#pictures">Imagens</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#plans">Planos</a></li>
+            <li><a href="#contact">Contate-nos</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="history">
+            <div class="history-content">
+                <h1>Quem Somos?</h1>
+
+                <p>Na FHD Music, acreditamos que a música é capaz de transformar vidas e conectar pessoas. Nosso espaço nasceu do desejo de compartilhar conhecimento e inspirar novos talentos, oferecendo cursos de violão, guitarra e contrabaixo, além de um ambiente acolhedor para aprender e viver a música. Aqui, cada acorde é um passo em direção aos seus sonhos musicais.</p>
+            </div>
+
+            <img src="images/rooms/facade.jpeg" alt="Faxada do deprtamento">
+        </section>
+
+        <!--FIM DO HISTORY-->
+
+        <section id="how-we-can-help">
+            <h2>Como Podemos te Ajudar</h2>
+            <div class="flex-classes">
+                <div class="classes-cards">
+                    <h3>Aulas Presenciais</h3>
+                    <p>Salas modernas com equipamentos de qualidade para seu aprendizado.</p>
+                </div>
+
+                <div class="classes-cards">
+                    <h3>Eventos e Workshops</h3>
+                    <p>Experiência prática em apresentações, encontros e masterclasses.</p>
+                </div>
+
+                <div class="classes-cards">
+                    <h3>Aulas Online</h3>
+                    <p>Aprenda de casa com transmissões ao vivo e suporte personalizado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM DO HOW I CAN HELP YOU-->
+
+        <section id="pictures">
+            <h2>Fotos por Dentro</h2>
+
+            <div class="grid-pictures">
+                <img style="grid-area: box-1;" src="images/rooms/main-classroom.jpeg" alt="Main classroom">
+
+                <img style="grid-area: box-2;" src="images/rooms/principal's-office.jpeg" alt="Principal's office">
+
+                <img style="grid-area: box-3;" src="images/rooms/secondary-classroom.jpeg" alt="Secondary classroom">
+
+                <img style="grid-area: box-4;" src="images/rooms/waiting-room.jpeg" alt="Waiting room">
+
+                <img style="grid-area: box-5;" src="images/rooms/restroom.jpeg" alt="Restroom">
+            </div>
+        </section>
+
+        <!--FIM DO PICTURES-->
+
+        <section id="courses">
+            <h2>Cursos</h2>
+
+            <div class="courses-container">
+                <div class="courses-cards">
+                    <img src="images/courses/guitarra.jpg" alt="">
+                    <div class="courses-cards_container">
+                        <h3>Guitarra</h3>
+                        <p>Aprenda solos, improvisação, pentatônica e domine a guitarra elétrica.</p>
+                        <a class="btn-courses-cards" href="#">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="courses-cards">
+                    <img src="images/courses/violão.jpg" alt="">
+                    <div class="courses-cards_container">
+                        <h3>Violão</h3>
+                        <p>Do básico ao avançado, com foco em prática real e repertório variado.</p><a class="btn-courses-cards" href="#">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="courses-cards">
+                    <img src="images/courses/baixo.jpg" alt="">
+                    <div class="courses-cards_container">
+                        <h3>Contrabaixo</h3>
+                        <p>Entenda como fazer um groove, ritmo e seja a base harmônica da música.</p><a class="btn-courses-cards" href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <a id="access-courses" href="#">Acesse nossos cursos</a>
+        </section>
+
+        <!--FIM DO COURSES-->
+
+        <section id="plans">
+            <h2>Planos</h2>
+
+            <div class="plans-container">
+                <div class="plans-content">
+                    <h3>Básico</h3>
+                    <span>R$100/mês</span>
+                    <ul>
+                        <li>1 aula por semana</li>
+                        <li>Materia digital incluso</li>
+                    </ul>
+
+                    <a href="#">Assinar</a>
+                </div>
+
+                <div class="plans-content" id="plan-recommended">
+                    <h3>Recomendado</h3>
+                    <span>R$150/mês</span>
+                    <ul>
+                        <li>2 aulas por semana</li>
+                        <li>Materia digital incluso</li>
+                        <li>Acesso a workshops</li>
+                    </ul>
+
+                    <a href="#">Assinar</a>
+                </div>
+
+                <div class="plans-content" id="plan-premium">
+                    <h3>Premium</h3>
+                    <span>R$200/mês</span>
+                    <ul>
+                        <li>3 aulas por semana</li>
+                        <li>Materia + suporte individual</li>
+                        <li>Acesso a workshops e eventos</li>
+                    </ul>
+
+                    <a href="#">Assinar</a>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM DO PRICE-->
+
+        <section id="contact">
+            <h2>Contate-nos</h2>
+
+            <ul>
+                <li>Telefone: (11) 99999-9999</li>
+                <li>E-mail: <a href="mail.google.com" target="_blank">FHD_music@gmail.com</a></li>
+                <li>Endereço: <a href="https://www.google.com/maps/place/Av.+Valter+Antônio+Fontana,+695+-+Jardim+Monte+Carlo,+Assis+-+SP,+19815-340/@-22.6558079,-50.3985257,17z/data=!3m1!4b1!4m6!3m5!1s0x949539aec09db42d:0xc9a94e07de8834ee!8m2!3d-22.6558079!4d-50.3959508!16s%2Fg%2F11vlw0kxfp?entry=ttu&g_ep=EgoyMDI1MDkyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Avenida Walter Fontana, 695</a></li>
+            </ul>
+
+            <span>© 2025 FHD Music - Todos os direitos reservados.</span>
+        </section>
+    </main>
+
+    <footer>
+        <span>Site criado por <a href="https://github.com/HenriqueYamada" target="_blank">Henrique Yuji Yamada</a> para fins educativos</span>
+    </footer>
+</body>
+</html>
