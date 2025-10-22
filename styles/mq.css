@@ -19,12 +19,16 @@
 }
 
 @media (max-width: 680px){
+    #plan-basic{
+        order: 2;
+    }
+
     #plan-recommended{
         order: 0;
     }
 
     #plan-premium{
-        order: 1;
+        order: -1;
     }
 }
 

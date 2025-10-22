@@ -283,7 +283,6 @@ header #fhd-logo:hover{
 
 #access-courses:hover{
     background-color: var(--accent-color-darker);
-    scale: 1.1;
 }
 
 /*---plans---*/
@@ -370,7 +369,7 @@ header #fhd-logo:hover{
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 30px 0 15px 0;
+    padding: 30px 15px 15px 15px;
 }
 
 #contact h2{
@@ -382,7 +381,8 @@ header #fhd-logo:hover{
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
-    margin-bottom: 32.5px;
+    margin-bottom: 32px;
+    list-style-type: none;
 }
 
 #contact ul a{
@@ -400,7 +400,7 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 footer a{
